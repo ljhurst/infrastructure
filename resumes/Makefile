@@ -7,19 +7,19 @@
 XEX = xelatex
 
 SOURCE_FILES = $(wildcard *.tex)
-
 PDFS = $(SOURCE_FILES:%.tex=%)
+
+TEMPLATES = $(wildcard templates/*.tex)
+TEMPPDFS = $(TEMPLATES:%.tex=%)
 
 .PHONY: clean
 
 release: $(PDFS)
 
+template: $(TEMPPDFS)
+
 %: %.tex
 	$(XEX) $^
-
-print:
-	echo $(SOURCE_FILES)
-	echo $(PDFS)
 
 clean:
 	$(RM) *.log *.aux
