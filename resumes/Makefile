@@ -22,4 +22,4 @@ template: $(TEMPPDFS)
 	$(XEX) $^
 
 clean:
-	$(RM) *.log *.aux
+	$(RM) *.log *.aux *.out
