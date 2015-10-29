@@ -26,7 +26,12 @@
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont{Georgia} % Main document font
 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[left=0.72in,top=0.6in,right=0.72in,bottom=0.6in]{geometry} % Document margins
+
+\usepackage{etoolbox,refcount}
+\usepackage{multicol}
+
+\usepackage{enumitem}
 
 \name{Luke Hurst} % Your name
 \address{(989)~$\cdot$~277~$\cdot$~7714 \\ hurstlj@umich.edu} % Your phone number and email
@@ -40,12 +45,21 @@
 
 \begin{rSection}{Education}
 
-{\bf University of California, Berkeley} \hfill {\em June 2004} \\ 
-B.S. in Computer Science \& Engineering \\
-Minor in Linguistics \smallskip \\
-Member of Eta Kappa Nu \\
-Member of Upsilon Pi Epsilon \\
-Overall GPA: 5.678
+{\bf University of Michigan, Ann Arbor} \hfill {\em April 2017 (Pending)} \\
+Bachelor of Science in Computer Science \& Engineering \\
+Overall GPA: 3.60 \\
+Classes Taken:
+\vspace{-3mm}
+\begin{multicols}{2}
+\begin{itemize}[noitemsep,nolistsep]
+    \item EECS285: Practical Java Programming
+    \item EECS280: Programming and Data Structures
+    \item EECS281: Data Structures and Algorithms
+    \item EECS370: Intro. to Computer Organization
+    \item EECS376: Foundations of Computer Science
+    \item EECS484: Database Management Systems
+\end{itemize}
+\end{multicols}
 
 \end{rSection}
 
@@ -55,7 +69,7 @@ Overall GPA: 5.678
 
 \begin{rSection}{Experience}
 
-\begin{rSubsection}{ACME, Inc}{October 2010 - Present}{Web Developer}{Palo Alto, CA}
+\begin{rSubsection}{TD Ameritrade}{May 2015 - August 2015}{Advanced Technology Intern}{Ann Arbor, MI}
 \item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.
 \item Donec et mollis dolor. Praesent et diam eget libero Adobe Coldfusion egestas mattis sit amet vitae augue.
 \item Nam tincidunt congue enim, ut porta lorem Microsoft SQL lacinia consectetur.
@@ -76,7 +90,7 @@ Overall GPA: 5.678
 
 %------------------------------------------------
 
-\begin{rSubsection}{TinySoft}{January 2008 - April 2010}{Web Designer \& Developer}{Gainesville, GA}
+\begin{rSubsection}{Recreational Sports}{September 2013 - Present}{Supervisor}{Ann Arbor, MI}
 \item Vivamus PostgreSQL fermentum semper porta. Nunc diam velit PHP, adipiscing ut tristique vitae
 \item Maecenas convallis ullamcorper ultricies stylesheets.
 \item Quisque mi metus, unit tests CSS ornare sit amet fermentum et, tincidunt et orci.
