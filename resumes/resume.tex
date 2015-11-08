@@ -20,36 +20,50 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass{resume} % Use the custom resume.cls style
+% Use the custom resume.cls style
+\documentclass{resume}
 
-\usepackage{fontspec} % For loading fonts
+% For loading fonts
+\usepackage{fontspec}
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont{Georgia} % Main document font
 
-\usepackage[left=0.72in,top=0.6in,right=0.72in,bottom=0.6in]{geometry} % Document margins
+% Main document font
+\setmainfont{Georgia}
+
+% Document margins
+\usepackage[left=0.72in,top=0.6in,right=0.72in,bottom=0.6in]{geometry}
 
 \usepackage{etoolbox,refcount}
+
+% For creating lists with multiple columns
 \usepackage{multicol}
 
 \usepackage{enumitem}
 
+% For formating hyperlinks with no decoration
 \usepackage[hidelinks]{hyperref}
 
-\name{Luke Hurst} % Your name
-\address{(989)~$\cdot$~277~$\cdot$~7714 \\ hurstlj@umich.edu} % Your phone number and email
-\address{1114 Propect Ave, Ann Arbor, MI 48104} % Your address
+% Your name
+\name{Luke Hurst}
+
+% Your phone number and email
+\address{(989)~$\cdot$~277~$\cdot$~7714 \\ hurstlj@umich.edu}
+
+% Your address
+\address{1114 Propect Ave, Ann Arbor, MI 48104}
 
 \begin{document}
 
 \bigskip
 
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 %	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 
 \begin{rSection}{Education}
 
-{\bf University of Michigan, Ann Arbor \hfill GPA: 3.6/4.0 \\}% \hfill {\em April 2017 (Pending)} \\
+% Primary Education
+{\bf University of Michigan, Ann Arbor \hfill GPA: 3.6/4.0 \\}
 B.S.E in Computer Science \& Engineering \hfill \begin{em} April 2017 \end{em}\\
 Classes Taken:
 \vspace{-3mm}
@@ -67,20 +81,28 @@ Classes Taken:
 
 \end{rSection}
 
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 
 \begin{rSection}{Experience}
 
-\begin{rSubsection}{TD Ameritrade}{May 2015 - August 2015}{Advanced Technology Intern}{Ann Arbor, MI}
-    \item Collaborated with social media, business, and Advanced Technology teams to identify design \\
-          requirements for an application that monitors social media traffic and aids customer service
-    \item Designed a solution that makes queries to Twitter's REST API periodically and displays resulting tweets
-    \item Implemented a custom web application client using JavaScript, HTML, and CSS and
-          a custom server backend using JavaScript with Node.js and Express.js
-    \item Communicated necessity of product to COO and business executives which led to product adoption 
-    \item Brainstormed future expansion such as mobile availability and multiple social media streams
+\begin{rSubsection}{TD Ameritrade}
+                   {May 2015 - August 2015}
+                   {Advanced Technology Intern}
+                   {Ann Arbor, MI}
+    \item Collaborated with social media, business, and Advanced Technology
+          teams to identify design \\ requirements for an application that
+          monitors social media traffic and aids customer service
+    \item Designed a solution that makes queries to Twitter's REST API
+          periodically and displays resulting tweets
+    \item Implemented a custom web application client using JavaScript, HTML,
+          and CSS and a custom server backend using JavaScript with Node.js and
+          Express.js
+    \item Communicated necessity of product to COO and business executives which
+          led to product adoption 
+    \item Brainstormed future expansion such as mobile availability and multiple
+          social media streams
 \end{rSubsection}
 
 %------------------------------------------------
