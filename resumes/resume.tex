@@ -43,11 +43,27 @@
 % For formating hyperlinks with no decoration
 \usepackage[hidelinks]{hyperref}
 
+% For calculating days betweeen two dates
+\usepackage{datenumber}
+\newcounter{dateone}
+\newcounter{datetwo}
+
+\newcommand{\difftoday}[3]{
+    \setmydatenumber{dateone}{2010}{06}{21}
+    \setmydatenumber{datetwo}{#1}{#2}{#3}
+    \addtocounter{datetwo}{-\thedateone}
+    \addtocounter{datetwo}{1}
+    \thedatetwo
+}
+
 % Your name
 \name{Luke Hurst}
 
 % Your phone number and email
 \address{(989)~$\cdot$~277~$\cdot$~7714 \\ hurstlj@umich.edu}
+
+% Consecutive days of a mile or more
+\address{\difftoday{\the\year}{\the\month}{\the\day} Consecutive Days}
 
 % Your address
 \address{1114 Propect Ave, Ann Arbor, MI 48104}
@@ -148,15 +164,10 @@ Classes Taken:
 \begin{rSection}{Technical Strengths}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-<<<<<<< HEAD
 Computer Languages & C++,\enspace C,\enspace Java,\enspace JavaScript,\enspace
                      ARM Assembly \\
 Web Technologies & HTML,\enspace CSS,\enspace JSON,\enspace AJAX,\enspace
                    Node.js,\enspace Bower,\enspace Grunt \\
-=======
-Computer Languages & C++,\enspace C,\enspace Java,\enspace JavaScript,\enspace ARM Assembly \\
-Web Technologies & HTML,\enspace CSS,\enspace jQuery,\enspace JSON,\enspace AJAX,\enspace Node.js,\enspace Bower,\enspace Grunt \\
->>>>>>> 244df2d2f1e58a5a67684dae2a4ff9e812097cdd
 Databases & Oracle SQL,\enspace SQL*Plus,\enspace JDBC \\
 Tools & Linux,\enspace Git,\enspace SVN,\enspace Vim
 \end{tabular}
