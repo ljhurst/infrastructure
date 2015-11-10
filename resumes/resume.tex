@@ -34,6 +34,10 @@
 \usepackage[left=0.72in,top=0.6in,right=0.72in,bottom=0.6in]{geometry}
 
 \usepackage{etoolbox,refcount}
+\usepackage{numprint}
+\npthousandsep{,}
+\npthousandthpartsep{}
+\npdecimalsign{.}
 
 % For creating lists with multiple columns
 \usepackage{multicol}
@@ -53,7 +57,7 @@
     \setmydatenumber{datetwo}{#1}{#2}{#3}
     \addtocounter{datetwo}{-\thedateone}
     \addtocounter{datetwo}{1}
-    \thedatetwo
+    \numprint{\thedatetwo}
 }
 
 % Your name
@@ -63,7 +67,7 @@
 \address{(989)~$\cdot$~277~$\cdot$~7714 \\ hurstlj@umich.edu}
 
 % Consecutive days of a mile or more
-\address{\difftoday{\the\year}{\the\month}{\the\day} Consecutive Days}
+\address{\difftoday{\the\year}{\the\month}{\the\day} Consecutive Days Running a Mile or More}
 
 % Your address
 \address{1114 Propect Ave, Ann Arbor, MI 48104}
