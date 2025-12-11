@@ -44,10 +44,10 @@
 
 \usepackage{enumitem}
 
-% For formating hyperlinks with no decoration
+% For formatting hyperlinks with no decoration
 \usepackage[hidelinks]{hyperref}
 
-% For calculating days betweeen two dates
+% For calculating days between two dates
 \usepackage{datenumber}
 \newcounter{dateone}
 \newcounter{datetwo}
@@ -70,7 +70,7 @@
 \address{\difftoday{\the\year}{\the\month}{\the\day} Consecutive Days Running a Mile or More}
 
 % Your address
-\address{2857  NW Westover Rd, Portland, OR 97210}
+\address{2244 NW Overton St, Portland, OR 97210}
 
 \begin{document}
 
@@ -87,7 +87,7 @@
 
 % Primary Education
 {\bf University of Michigan, Ann Arbor \hfill GPA: 3.6/4.0 \\}
-B.S.E in Computer Science \& Engineering \hfill \begin{em} April 2017 \end{em}\\
+B.S.E. in Computer Science \& Engineering \hfill \begin{em} April 2017 \end{em}\\
 
 \vspace{-3mm}
 \end{rSection}
@@ -97,59 +97,72 @@ B.S.E in Computer Science \& Engineering \hfill \begin{em} April 2017 \end{em}\\
 %-------------------------------------------------------------------------------
 \begin{rSection}{Experience}
 
-\begin{rSubsection}{Nike Technology}
+\begin{rSubsection}{Nike Technology - GenAI Blueprints}
                    {Beaverton, OR}
-                   {Sr Software Engineer - Advanced Analytics}
-                   {November 2021 - Present}
-    \item Designed, implemented, and deployed three large scale data and model pipelines and one API for model serving
-          using data technologies such as Spark, Databricks, Airflow, and S3 in Python
-    \item Assessed and implemented improvements to legacy data and model pipelines to improve stability and reduce cost and runtime
-          by optimizing data access and right-sizing infrastructure
-    \item Collaborate with cross functional teams to lead and teach software engineering best practice usage in data science and machine learning pipelines
+                   {Sr Software Engineer}
+                   {June 2025 - Present}
+    \item Designed and implemented a blueprint for MCP servers that enabled teams
+          to quickly build and deploy their existing tools to interface with AI agents
+    \item Built a multi-agent deep research POC using LangGraph that autonomously researched
+          complex topics and generated comprehensive reports using internal and vetted external data sources
 \vspace{-2mm}
 \end{rSubsection}
 
 %------------------------------------------------
 
-\begin{rSubsection}{Nike Technology}
-                   {Beaverton, OR}
-                   {Data Engineer - Advanced Analytics}
+\begin{rSubsection}{Nike Technology - GenAI Copywriting}
+                   {}
+                   {Sr Software Engineer}
+                   {May 2024 - June 2025}
+    \item Designed, implemented, and deployed a Generative AI powered, full-stack application
+          to assist marketers in generating product copy for 8,000 products per season using NPE, Vue.js, and FastAPI
+    \item Generated \$24M in annualized demand lift by delivering copy on time, leading to
+          longer full price runway and increasing wholesale conversion rate where no copy existed before
+    \item Extensively evaluated the GenAI solution including focused golden dataset tests that checked exact
+          accuracy, and large-scale statistical tests to ensure high quality and enable rapid development
+    \item Instilled a welcoming engineering culture with high standards by mentoring teammates,
+          presiding over design discussions, and balancing growth and delivery
+\vspace{-2mm}
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Nike Technology - Member Insights}
+                   {}
+                   {Sr Software Engineer}
+                   {November 2021 - May 2024}
+    \item Designed, implemented, and deployed three large-scale data and model pipelines and one API for model serving
+          that calculated core member KPIs Lifetime Value, Churn, and Segmentation using data technologies such as
+          Spark, Databricks, Airflow, and S3 in Python
+    \item Reduced cost and runtime of legacy data and model pipelines by up to 98\% by optimizing data access patterns
+          and right-sizing infrastructure
+    \item Served as engineering representative on a data science team, mentoring teammates by introducing software engineering best practices
+          and earning adoption by demonstrating their value
+\vspace{-2mm}
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Nike Technology - Launch Demand Forecasting}
+                   {}
+                   {Data Engineer}
                    {February 2019 - November 2021}
-    \item Built and maintained the data, application, and hosted the model for sneaker launch
-          demand forecasting that unlocked over \$4M in EBIT per geo/season
-    \item Utilized full stack technologies ranging from ETL (Airflow, EMR, Spark), to
-          backend (Python, Flask, AWS Lambda/API Gateway), and frontend (AngularJS, HTML5)
-    \item Provided technical and system design leadership when approaching engineering
-          problems and communicated with leadership, stakeholders, and team members
+    \item Built and maintained the data, application, and model hosting for sneaker launch
+          demand forecasting that unlocked over \$4M in EBIT per geo/season using full-stack technologies for
+          ETL (Airflow, EMR, Spark), backend (Python, Flask, Lambda/API Gateway), and frontend (AngularJS, HTML5)
 \vspace{-2mm}
 \end{rSubsection}
 
 %------------------------------------------------
 
-\begin{rSubsection}{Nike Technology Rotation}
-                   {Beaverton, OR}
-                   {Rotation 3: Service Management Developer}
-                   {August 2018 - February 2019}
-    \item Built RESTful API's enterprise management services like incident management
-          to allow integration and automation with the enterprise management tool, saving
-          over 120 hrs/week in manual work
-    \item Ensured API authorization, authentication, and rate limiting, and followed REST best practices
-          so that API consumers could self-serve and add value quickly
-
-    \vspace{-1mm}
-    {\em Rotation 2: Advanced Analytics Data Engineer} \hfill {\em March 2018 -  August 2018}
-    \item Built an automated platform health testing system that probed the most
-          commonly used tools as well as critical system integrations and sent
-          proactive alerts to minimize impact to analytics operations
-    \item Enabled data scientists by building a framework for containerizing models
-          with Docker to allow easier development, troubleshooting, and seamless deployment
-          throughout the platform
-
-    \vspace{-1mm}
-    {\em Rotation 1: Supply Chain Application Engineer} \hfill {\em July 2017 - March 2018}
-    \item Implemented an SAP inventory planning tool and modified existing data flows
-          to improve always available product levels and save over \$4M in inventory positions
-    \item Improved and maintained a full-stack web application in a fully agile framework
+\begin{rSubsection}{Nike Technology - Rotation}
+                   {}
+                   {Software Engineer}
+                   {July 2017 - February 2019}
+    \item Rotation 1: Implemented an SAP inventory planning tool to improve always available product levels and save over \$4M in inventory positions
+    \item Rotation 2: Enabled data scientist productivity by implementing proactive platform health checks
+          and a framework for containerizing models with Docker
+    \item Rotation 3: Built APIs for incident management to allow automation, saving 120 hrs/wk in manual work
 \vspace{-2mm}
 \end{rSubsection}
 
@@ -162,11 +175,12 @@ B.S.E in Computer Science \& Engineering \hfill \begin{em} April 2017 \end{em}\\
 \begin{rSection}{Technical Strengths}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Programming Languages & C++,\enspace C,\enspace Java,\enspace JavaScript,\enspace
-                     Python,\enspace Swift,\enspace ARM Assembly \\
-Web Technologies & Angular,\enspace React,\enspace REST,\enspace Node.js,\enspace Express,\enspace Spring Boot,\enspace Flask \\
-Databases & Oracle SQL,\enspace Teradata,\enspace MySQL,\enspace SQLite,\enspace Snowflake,\enspace Spark,\enspace Hive \\
-Tools & Linux,\enspace Git,\enspace Vim,\enspace Jenkins,\enspace Docker,\enspace Airflow,\enspace Terraform,\enspace Databricks \\
+Programming Languages & Python,\enspace JavaScript,\enspace TypeScript,\enspace C++,\enspace C,\enspace Java,\enspace Go \\
+Web Technologies & Vue,\enspace React,\enspace REST,\enspace Node.js,\enspace Express,\enspace FastAPI \\
+Data & Databricks,\enspace Snowflake,\enspace Spark,\enspace Airflow,\enspace DynamoDB,\enspace Vector Databases \\
+AI & LangChain,\enspace LangGraph,\enspace Agents,\enspace RAG,\enspace MCP \\
+Cloud & Lambda,\enspace S3,\enspace EC2,\enspace ECS, \enspace API Gateway,\enspace NPE,\enspace Sagemaker \\
+Tools & Linux,\enspace Git,\enspace Vim,\enspace Jenkins,\enspace Docker,\enspace Terraform,\enspace Cursor\\
 \end{tabular}
 
 \end{rSection}
